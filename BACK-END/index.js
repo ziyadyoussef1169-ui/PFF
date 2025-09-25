@@ -40,7 +40,14 @@ const PORT = process.env.PORT || 3000;
 // Start server only after successful DB connection
 async function start() {
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
+    await mongoose.connect(process.env.MONGODB_URI, {
+      // Optionally specify a DB name via env. If undefined, Mongoose uses the one in the URI
+      dbName: process.env.MONGODB_DBNAME,
+      // Faster feedback during development if the DB is unreachable
+      serverSelectionTimeoutMS: 5000,
+      // Force IPv4 in case of IPv6/DNS issues on some networks
+      family: 4,
+    });
     console.log('Connected to MongoDB');
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
