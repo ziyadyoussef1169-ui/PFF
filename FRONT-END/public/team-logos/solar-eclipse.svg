@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="solarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffaa00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#330000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#solarGradient)" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="28" cy="32" r="18" fill="#ffaa00" opacity="0.9"/>
+  <circle cx="36" cy="32" r="14" fill="#330000" opacity="0.8"/>
+  <path d="M32 8 L34 14 L32 20 L30 14 Z" fill="#ffffff" opacity="0.8"/>
+  <path d="M32 44 L34 50 L32 56 L30 50 Z" fill="#ffffff" opacity="0.8"/>
+  <path d="M8 32 L14 30 L20 32 L14 34 Z" fill="#ffffff" opacity="0.8"/>
+  <path d="M44 32 L50 30 L56 32 L50 34 Z" fill="#ffffff" opacity="0.8"/>
+  <path d="M14 14 L18 16 L20 20 L16 18 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M44 44 L48 46 L50 50 L46 48 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M14 50 L16 46 L20 44 L18 48 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M44 20 L46 16 L50 14 L48 18 Z" fill="#ffffff" opacity="0.6"/>
+</svg>
