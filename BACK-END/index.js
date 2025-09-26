@@ -21,7 +21,7 @@ app.use(
         process.env.CORS_ORIGIN,
         'http://localhost:5173',
         'http://localhost:8080',
-        'https://nexus-esports-verse.vercel.app'
+        'https://elite-arena.vercel.app/'
       ].filter(Boolean);
       // Allow non-browser requests (like curl/postman) with no origin
       if (!origin || allowed.includes(origin)) return callback(null, true);
